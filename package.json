@@ -1,0 +1,25 @@
+{
+  "name": "workout-tracker",
+  "version": "1.0.0",
+  "description": "View, create, and track daily workouts. I want to be able to log multiple exercises in a workout on a given day.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusTravis/Workout-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusTravis/Workout-Tracker/issues"
+  },
+  "homepage": "https://github.com/MarcusTravis/Workout-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0"
+  }
+}
