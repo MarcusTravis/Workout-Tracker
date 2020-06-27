@@ -26,15 +26,6 @@ View, create, and track daily workouts! The user should be able to add excercise
 
 Web Browser and internet connection required.
 
-### Installing
-
-N/A
-
-
-## Running the tests
-
-N/A
-
 ## Deployment
 
 https://arcane-tor-74753.herokuapp.com/
