@@ -22,7 +22,7 @@ mongoose.connect(MONGODB_URI, {
 
 // TODO require("./routes/apiroutes")(app);
 // TODO require("./routes/htmlroutes")(app);
-const Workout = require("../Workout-Tracker/models/workout.js");
+const Workout = require("/models/workout.js");
 
   app.get("/api/workouts", function (req, res) {
     Workout.find()
