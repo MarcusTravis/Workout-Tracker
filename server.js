@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+const path = require("path");
 
 app.use(morgan("dev"));
 
@@ -21,7 +22,8 @@ mongoose.connect(MONGODB_URI, {
 
 // require("./routes/apiroutes")(app);
 // require("./routes/htmlroutes")(app);
-module.exports = function (app) {
+const Workout = require("../Workout-Tracker/models/workout");
+
   app.get("/api/workouts", function (req, res) {
     Workout.find()
       .then((data) => {
@@ -66,7 +68,18 @@ module.exports = function (app) {
         res.json(err);
       });
   });
-};
+
+
+
+app.get("/exercise", function (req, res) {
+  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/exercise.html"));
+});
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/index.html"));
+});
+app.get("/stats", function (req, res) {
+  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/stats.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
