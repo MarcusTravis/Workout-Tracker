@@ -75,13 +75,13 @@ const Workout = require("./models/workout");
 
 
 app.get("/exercise", function (req, res) {
-  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/exercise.html"));
+  res.sendFile(path.join(__dirname, "public", "exercise.html"));
 });
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 app.get("/stats", function (req, res) {
-  res.sendFile(path.join(__dirname, "../Workout-Tracker/public/stats.html"));
+  res.sendFile(path.join(__dirname, "public", "stats.html"));
 });
 
 app.listen(PORT, () => {
