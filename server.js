@@ -20,9 +20,9 @@ mongoose.connect(MONGODB_URI, {
   useFindAndModify: false,
 });
 
-// require("./routes/apiroutes")(app);
-// require("./routes/htmlroutes")(app);
-const Workout = require("../Workout-Tracker/models/workout");
+// TODO require("./routes/apiroutes")(app);
+// TODO require("./routes/htmlroutes")(app);
+const Workout = require("../models/workout");
 
   app.get("/api/workouts", function (req, res) {
     Workout.find()
