@@ -22,6 +22,10 @@ Check out the app here!: https://arcane-tor-74753.herokuapp.com/
 
 View, create, and track daily workouts! The user should be able to add excercises to a previous workout plan, add new exercises to a new workout plan, and the user should be able to view the combined weight of multiple exercises on the 'stats' page.
 
+![image](./public/images/AddWorkout.PNG)
+![image](./public/images/Dashboard.PNG)
+![image](./public/images/LastWorkout.PNG)
+
 ### Prerequisites
 
 Web Browser and internet connection required.
